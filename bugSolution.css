@@ -1,0 +1,12 @@
+/* Correct usage of calc() */
+.element {
+  width: calc(100% - 10px);
+  height: calc((50% - 10px) * 2);
+  margin: calc(10px + 5%);
+}
+
+/* Incorrect usage (will likely fail) */
+/*.element {
+  width:calc(100% -10px); 
+  height: calc(calc(50% - 10px) * 2);
+}*/
